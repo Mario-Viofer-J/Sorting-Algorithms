@@ -20,7 +20,18 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
+#Developed By: MARIO VIOFER J
+#Register Number 212223100032
+Unsorted=eval(input())
+def selsort(Unsorted):
+  n = len(Unsorted)
+  for i in range(n-1):
+    min_pos = i
+    for j in range(i,n):
+      if Unsorted[j]<Unsorted[min_pos]:
+        Unsorted[j],Unsorted[min_pos] = Unsorted[min_pos],Unsorted[j]
+  return Unsorted
+print(selsort(Unsorted))
 
 
 
@@ -28,7 +39,17 @@ i)	#Selection Sort
 ```
 ii)	#Insertion Sort
 ```
-
+#Developed By: MARIO VIOFER J
+#Register Number 212223100032
+def Insertionsort(arr):
+  for i in range(1,len(arr)):
+    j = i
+    while arr[j]<arr[j-1] and j>0:
+      arr[j],arr[j-1] = arr[j-1], arr[j]
+      j-=1
+  return arr
+arr = eval(input())
+print(Insertionsort(arr))
 
 
 
@@ -37,7 +58,11 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
+i)	#Selection Sort
+![image](https://github.com/Mario-Viofer-J/Sorting-Algorithms/assets/144979232/6bf36331-de2f-4aac-91de-c20a891c2df2)
 
+ii)	#Insertion Sort
+![image](https://github.com/Mario-Viofer-J/Sorting-Algorithms/assets/144979232/33703050-5256-4d78-9d9f-47954e96ed9d)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
